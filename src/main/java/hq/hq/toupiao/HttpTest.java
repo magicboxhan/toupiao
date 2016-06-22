@@ -61,7 +61,7 @@ public class HttpTest {
             //请求地址
             HttpPost httpPost = new HttpPost("http://10.14.41.165:8011/Service.ashx");
             //Post字符串
-            String data = "201204261002{\"AccountID\":\"f97f1493-692e-483d-bea0-1937f269c42a\",\"MethodName\":\"QueryMember\",\"MethodVersion\":1,\"Namespace\":\"TongCheng.SOA.Interface.TCMember.Main.Entities\",\"ReqTime\":\"\\/Date(1465366892273+0800)\\/\",\"Version\":\"201204261002\"}#tcsoa#TongCheng.SOA.Interface.TCMember.Main.Entities.QueryMemberRequest#tcsoa#TongCheng.SOA.Interface.TCMember.Main.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null#tcsoa#{\"AccessToken\":null,\"Act\":{\"AppKey\":\"QA.Test\",\"AppSecret\":\"2e44d22f-5353-40cc-a3c1-0819faf0fb86\"},\"Ip\":\"10.101.64.72\",\"MemberSystem\":0,\"QueryKey\":18652332951,\"QueryType\":3}";
+            String data = "";
 
             httpPost.setEntity(new StringEntity(data));
             CloseableHttpResponse response = httpclient.execute(httpPost);
